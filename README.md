@@ -1,12 +1,10 @@
 # Reliable UDP
 
-**Overview**
+## Overview
 
 The goal of the project was to develop a reliable transfer protocol like TCP using an unreliable data transfer protocol as UDP. Some of the features that are implemented though this project are sequence numbers to check packet duplicity, checksum for packet validation and acknowledgements for the received packets.
 
----
-
-**Test Cases**
+## Test Cases
 
 I used a software called 'clumsy' to simulate unreliable network. It can be downloaded from here: https://jagt.github.io/clumsy/
 1. **Ideal network:** Transmission of data on a network withhout any of the following mentioned problems.
@@ -16,9 +14,7 @@ I used a software called 'clumsy' to simulate unreliable network. It can be down
 5. **Network with re-ordering:** Sequence numbers are used to handle re-ordering. If an unintended segment is received by the server, it asks the client to retransmit the segment ensuring the order of the segments is maintained.
 6. **Network having all the above problems:** This can be handled as all of the above mechanisms work simultaneously.
 
----
-
-**Files**
+## Files
 
 1. **fcntp.java:** acts as a command line argument interpreter. Server and client can be started depending upon the arguments provided. Following are examples:
 * `java fcntp -s 9999` starts server on port 9999
