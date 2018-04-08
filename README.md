@@ -6,6 +6,7 @@ The goal of the project was to develop a reliable transfer protocol like TCP usi
 
 **Test Cases**
 
+I used a software called 'clumsy' to simulate unreliable network. It can be downloaded from here: https://jagt.github.io/clumsy/
 1. **Ideal network:** Transmission of data on a network withhout any of the following mentioned problems.
 2. **Network with loss:** Acknowledgements are used to handle network with loss. If a packet is lost, the sequence number of last acknowledged packet is sent as the acknowledgement. This informs the client to retransmit the segment
 3. **Network with corruption:** Checksum is calculated which ensures the data integrity of the segment. If the server checksum and the client checksum don’t match, the sequence number of last acknowledged packet is sent as the acknowledgement. This informs the client to retransmit the segment
