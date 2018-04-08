@@ -1,7 +1,5 @@
 # Reliable UDP
 
-## Overview
-
 The goal of the project was to develop a reliable transfer protocol like TCP using an unreliable data transfer protocol as UDP. Some of the features that are implemented though this project are sequence numbers to check packet duplicity, checksum for packet validation and acknowledgements for the received packets.
 
 ## Test Cases
