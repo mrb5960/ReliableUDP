@@ -1,4 +1,4 @@
-# ReliableUDP
+# Reliable UDP
 
 **Overview**
 
